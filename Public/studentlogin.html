@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login Form | online Clearance system</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+  <script src="./js/jquery-2.1.1.js"></script>
+
+<style type="text/css">
+.style3 {
+	color: #FF0000;
+	font-weight: bold;
+	font-size: 24px;
+}
+.style4 {color: #FF0000}
+.login_form{
+  border: 1px solid lightgreen;
+  padding: 10px 20px;
+}
+</style>
+</head>
+<body class="gray-bg">
+  <div class="middle-box text-center loginscreen animated fadeInDown">
+    <div class="login_form">
+      <div>
+        <h5 class="style3">Student's Login</h5>
+        <h1 class="logo-name"><img src="images/logo.png" alt="Mouau Logo" width="200" height="200"></h1>
+      </div>
+      <form class="m-t" role="form" method="POST">
+          <div class="form-group">
+              <input type="text" name="txtmatric_no" class="form-control log_matric_no" placeholder="Matric No" required="">
+          </div>
+          <div class="form-group">
+              <input type="password" name="txtpassword" class="form-control log_std" placeholder="Password" required="">
+          </div>
+          <p class="text-muted text-center dis_log_err" style="height:15px"></p>
+          <button type="submit" name="btnlogin" class="btn btn-primary block full-width m-b">Login</button>
+      </form>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="style1"><p>Copyright @2023. <b style="font-weight:900">Learned's Digital Concept</b> | Online clearance System | Michael Okpara University of Agriculter Umudike (MOUAU), Abia State, Nigeria.  All Rights Reserved. </p>
+  </div>
+  <script>
+
+  // // Get the session cookie from the document
+  // const cookie = document.cookie;
+  // // Check if the session cookie is set
+  // if (cookie.indexOf("session=") !== -1) {
+
+  //   // Extract the session ID and expiry date from the cookie
+  //   const sessionId = cookie.split("session=")[1].split(";")[0];
+  //   const expiryDate = new Date(parseInt(sessionId.split("-")[1], 10) * 1000);
+
+  //   // Log the expiry date to the console
+  //   console.log("Session will expire on " + expiryDate.toString());
+
+  // } else {
+  //   // Session cookie is not set
+  //   console.log("Session cookie not found");
+  // }
+  </script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
